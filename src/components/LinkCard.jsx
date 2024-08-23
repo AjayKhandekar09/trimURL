@@ -34,7 +34,7 @@ function LinkCard({ url, fetchUrls }) {
       <Link className='flex flex-col flex-1' to={`/link/${url?.id}`}>
         <span className='text-3xl font-extrabold hover:underline cursor-pointer text-left'>{url?.title}</span>
         <span className='text-2xl text-blue-400 font-bold hover:underline cursor-pointer text-left'>
-          https://trimUrl.com/{url?.custom_url ? url?.custom_url : url?.short_url}
+          https://trim-url-puce.vercel.app/{url?.custom_url ? url?.custom_url : url?.short_url}
         </span>
         <span className='flex items-center gap-1 hover:underline cursor-pointer text-left'>
           <LinkIcon className="p-1" />
@@ -47,7 +47,7 @@ function LinkCard({ url, fetchUrls }) {
       <div className='flex gap-2'>
         <Button className='text-white' onClick={(e) => {
             const link = url?.custom_url ? url?.custom_url : url?.short_url
-            navigator.clipboard.writeText(`https://trimUrl.com/${link}`)
+            navigator.clipboard.writeText(`https://trim-url-puce.vercel.app/${link}`)
         }}>
           <Copy />
         </Button>

@@ -112,7 +112,7 @@ function CreateLink() {
                 <Input type='text' id='original_url' value={formValues.original_url} onChange={handleChange} placeholder="Enter your long URL"/>
                 {errors.original_url && <Error message={errors.original_url}/>}
                 <div className='flex items-center gap-2'>
-                    <Card className="p-2">trimURL.com</Card>/
+                    <Card className="p-2">trim-url-puce.vercel.app</Card>/
                     <Input type='text' id='custom_url' value={formValues.custom_url} onChange={handleChange} placeholder="Custom Link (optional)"/>
                     
                 </div>

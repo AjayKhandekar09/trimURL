@@ -63,8 +63,8 @@ function Link() {
       <div className='flex flex-col gap-8 sm:flex-row justify-between'>
         <div className='flex flex-col gap-8 items-start rounded-lg sm:w-2/5'>
           <span className="text-6xl font-extrabold hover:underline cursor-pointer">{url?.title}</span>
-          <a href={`https://trimURL.com/${link}`} className="flex items-center gap-1 hover:underline cursor-pointer" target='_blank'>
-            https://trimURL.com/{link}
+          <a href={`https://trim-url-puce.vercel.app/${link}`} className="flex items-center gap-1 hover:underline cursor-pointer" target='_blank'>
+            https://trim-url-puce.vercel.app/{link}
           </a>
           <a href={url?.original_url} className="text-3xl sm:text-4xl text-blue-400 font-bold hover:underline cursor-pointer" target='_blank'>
             <LinkIcon className="p-1"/>
@@ -74,7 +74,7 @@ function Link() {
           <div className='flex gap-2'>
             <Button className='text-black bg-white' onClick={() => {
               const link = url?.custom_url ? url?.custom_url : url?.short_url
-              navigator.clipboard.writeText(`https://trimUrl.com/${link}`)
+              navigator.clipboard.writeText(`https://trim-url-puce.vercel.app/${link}`)
             }}>
               <Copy />
             </Button>
