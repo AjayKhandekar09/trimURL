@@ -17,7 +17,7 @@ function RedirectLink() {
   
   useEffect(() => {
     fn()
-, []  })
+},[])
 
     useEffect(() => {
       if(loading && data) {
