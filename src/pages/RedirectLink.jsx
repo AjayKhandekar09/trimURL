@@ -22,6 +22,8 @@ function RedirectLink() {
     useEffect(() => {
       if(loading && data) {
         fnStoreClicks()
+        console.log(data?.original_url);
+        
         window.location.href = data?.original_url
       }
     },[loading])
