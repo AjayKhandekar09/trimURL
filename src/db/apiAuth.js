@@ -25,7 +25,7 @@ export async function getCurrentUser() {
 
 export async function signUp({name , email , password , profile_pic}) {
 
-    console.log(name,email,password);
+    // console.log(name,email,password);
     
     const filename = `dp${name.split(" ").join('-')}-${Math.random()}`
     const {error : storageError} = await supabase
