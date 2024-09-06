@@ -24,7 +24,7 @@ function RedirectLink() {
         fnStoreClicks()
         console.log(data?.original_url);
         
-        window.location.href = data?.original_url
+        // window.location.href = data?.original_url
       }
     },[loading])
 
